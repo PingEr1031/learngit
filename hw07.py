@@ -16,7 +16,7 @@ def generate_data(n=100, p=20, sigma=5, density=0.2):
     Y = X.dot(beta_true) + np.random.normal(0, sigma, size=n)
     return X, Y, beta_true
 
-# pip install cvxopt
+pip install cvxopt
 from cvxopt  import solvers, matrix
 def QP(X, Y, t):
     n, p = X.shape
